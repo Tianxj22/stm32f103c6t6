@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Hardware -I.\Libarys -I.\Start -I.\System -I.\User
+-I D:\stm32project\f103c6t6\Encoder\RTE
+-I D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+-I D:\keil5\ARM\CMSIS\Include
+-D__UVISION_VERSION="514" -DSTM32F10X_LD -DUSE_STDPERIPH_DRIVER
+-o .\stm32f10x_dbgmcu.o --omf_browse .\stm32f10x_dbgmcu.crf --depend .\stm32f10x_dbgmcu.d "Libarys\stm32f10x_dbgmcu.c"
