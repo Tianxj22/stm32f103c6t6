@@ -1,7 +1,7 @@
 #include "LED.h"
 
 uint16_t* _Used_LED_GPIO;
-uint8_t _TotalUsedLEDNum;
+uint8_t _TotalUsedKeyNum;
 
 /**
  * @brief 初始化GPIOA端口为使用的LED口
@@ -22,7 +22,7 @@ void LED_Init(uint16_t* UsedGPIO, uint8_t TotalUsedNum)
 
     GPIO_Init(LED_GPIO_GROUP, &GPIO_InitStruct);
     _Used_LED_GPIO = UsedGPIO;
-    _TotalUsedLEDNum = TotalUsedNum;
+    _TotalUsedKeyNum = TotalUsedNum;
 }
 
 /**
@@ -32,7 +32,7 @@ void LED_Init(uint16_t* UsedGPIO, uint8_t TotalUsedNum)
  */
 uint8_t LED_On(uint8_t LED_Order)
 {
-    if(LED_Order >= _TotalUsedLEDNum)
+    if(LED_Order >= _TotalUsedKeyNum)
     {
         return 0;
     }
@@ -47,7 +47,7 @@ uint8_t LED_On(uint8_t LED_Order)
  */
 uint8_t LED_Off(uint8_t LED_Order)
 {
-    if(LED_Order >= _TotalUsedLEDNum)
+    if(LED_Order >= _TotalUsedKeyNum)
     {
         return 0;
     }
@@ -62,7 +62,7 @@ uint8_t LED_Off(uint8_t LED_Order)
  */
 uint8_t LED_Turn(uint8_t LED_Order)
 {
-    if(LED_Order >= _TotalUsedLEDNum)
+    if(LED_Order >= _TotalUsedKeyNum)
     {
         return 0;
     }

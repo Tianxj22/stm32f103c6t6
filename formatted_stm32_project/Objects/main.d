@@ -30,3 +30,4 @@
 .\objects\main.o: .\Libarys\misc.h
 .\objects\main.o: .\System\Delay.h
 .\objects\main.o: .\Hardware\LED.h
+.\objects\main.o: .\Hardware\Key.h

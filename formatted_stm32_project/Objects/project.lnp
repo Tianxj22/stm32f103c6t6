@@ -26,8 +26,6 @@
 ".\objects\stm32f10x_tim.o"
 ".\objects\stm32f10x_usart.o"
 ".\objects\stm32f10x_wwdg.o"
-".\objects\countcollision.o"
-".\objects\encoder.o"
 ".\objects\key.o"
 ".\objects\led.o"
 ".\objects\main.o"
