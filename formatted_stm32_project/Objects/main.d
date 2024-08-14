@@ -31,3 +31,7 @@
 .\objects\main.o: .\System\Delay.h
 .\objects\main.o: .\Hardware\LED.h
 .\objects\main.o: .\Hardware\Key.h
+.\objects\main.o: .\Hardware\OLED.h
+.\objects\main.o: .\System\Timer.h
+.\objects\main.o: .\Hardware\PWM.h
+.\objects\main.o: .\Hardware\Serial.h
