@@ -16,6 +16,6 @@
 #include "stm32f10x_conf.h"
 
 void PWM_Init(uint32_t PWM_RCC_APB2Periph, GPIO_TypeDef* PWM_GPIO_GROUP, uint16_t UsedGPIO, uint16_t Cycle_ms);
-void PWM_SetCompare1(uint16_t Compare);
+void PWM_SetCompare(uint16_t Compare, uint8_t Order);
 
 #endif

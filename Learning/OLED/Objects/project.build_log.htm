@@ -21,12 +21,102 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
 Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
-D:\stm32project\f103c6t6\OLED\project.uvprojx
+D:\stm32project\f103c6t6\Learning\OLED\project.uvprojx
 Project File Date:  08/02/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\keil5\ARM\ARMCC\Bin'
 Build target 'Target 1'
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_md.s...
+compiling Delay.c...
+System\Delay.c(2): warning:  #47-D: incompatible redefinition of macro "USE_STDPERIPH_DRIVER" 
+  #define USE_STDPERIPH_DRIVER
+System\Delay.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+System\Delay.c(44): warning:  #1-D: last line of file ends without a newline
+  }
+System\Delay.c: 3 warnings, 0 errors
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling CountCollision.c...
+Hardware\CountCollision.h(5): warning:  #47-D: incompatible redefinition of macro "USE_STDPERIPH_DRIVER" 
+  #define USE_STDPERIPH_DRIVER
+Hardware\CountCollision.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+Hardware\CountCollision.c(64): warning:  #1-D: last line of file ends without a newline
+  }
+Hardware\CountCollision.c: 3 warnings, 0 errors
+compiling Encoder.c...
+Hardware\Encoder.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+Hardware\LED.h(5): warning:  #47-D: incompatible redefinition of macro "USE_STDPERIPH_DRIVER" 
+  #define USE_STDPERIPH_DRIVER
+Hardware\LED.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+Hardware\Encoder.c(91): warning:  #1-D: last line of file ends without a newline
+  }
+Hardware\Encoder.c: 4 warnings, 0 errors
+compiling Key.c...
+Hardware\Key.h(5): warning:  #47-D: incompatible redefinition of macro "USE_STDPERIPH_DRIVER" 
+  #define USE_STDPERIPH_DRIVER
+.\System\Delay.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+Hardware\Key.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+Hardware\Key.c(41): warning:  #1-D: last line of file ends without a newline
+  }
+Hardware\Key.c: 4 warnings, 0 errors
+compiling LED.c...
+Hardware\LED.h(5): warning:  #47-D: incompatible redefinition of macro "USE_STDPERIPH_DRIVER" 
+  #define USE_STDPERIPH_DRIVER
+Hardware\LED.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+Hardware\LED.c(78): warning:  #1-D: last line of file ends without a newline
+  }
+Hardware\LED.c: 3 warnings, 0 errors
+compiling OLED.c...
+Hardware\OLED.h(5): warning:  #47-D: incompatible redefinition of macro "USE_STDPERIPH_DRIVER" 
+  #define USE_STDPERIPH_DRIVER
+Hardware\OLED.h(43): warning:  #1-D: last line of file ends without a newline
+  #endif
+Hardware\MyI2C.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\System\Delay.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+Hardware\OLED_font.h(502): warning:  #1-D: last line of file ends without a newline
+  #endif
+Hardware\OLED.c: 5 warnings, 0 errors
+compiling MyI2C.c...
+Hardware\MyI2C.h(5): warning:  #47-D: incompatible redefinition of macro "USE_STDPERIPH_DRIVER" 
+  #define USE_STDPERIPH_DRIVER
+Hardware\MyI2C.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+Hardware\MyI2C.c(127): warning:  #1-D: last line of file ends without a newline
+  }
+Hardware\MyI2C.c: 3 warnings, 0 errors
 compiling main.c...
 User\main.c(2): warning:  #47-D: incompatible redefinition of macro "USE_STDPERIPH_DRIVER" 
   #define USE_STDPERIPH_DRIVER
@@ -43,12 +133,13 @@ User\main.c(33): warning:  #111-D: statement is unreachable
 User\main.c(34): warning:  #1-D: last line of file ends without a newline
   }
 User\main.c: 7 warnings, 0 errors
+compiling stm32f10x_it.c...
 linking...
 Program Size: Code=2376 RO-data=26892 RW-data=4 ZI-data=2660  
-".\Objects\project.axf" - 0 Error(s), 7 Warning(s).
+".\Objects\project.axf" - 0 Error(s), 32 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
-  D:\stm32project\f103c6t6\OLED\RTE
+  D:\stm32project\f103c6t6\Learning\OLED\RTE
   D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>

@@ -9,7 +9,7 @@
 
 int16_t Speed = 0;
 uint8_t KeyNum;
-uint16_t Cmp = 0;
+uint16_t Cmp = 1250;
 
 uint16_t UsedLED[1] = {GPIO_Pin_13};
 
